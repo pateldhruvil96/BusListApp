@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BusList" representedClassName="BusList" syncable="YES">
+        <attribute name="busType" optional="YES" attributeType="String"/>
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="destination" optional="YES" attributeType="String"/>
+        <attribute name="destinationTime" optional="YES" attributeType="String"/>
+        <attribute name="fare" optional="YES" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="logoImage" optional="YES" attributeType="Binary"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="source" optional="YES" attributeType="String"/>
+        <attribute name="sourceTime" optional="YES" attributeType="String"/>
+        <attribute name="travelsName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ImageSave" representedClassName="ImageSave" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+    </entity>
+    <elements>
+        <element name="BusList" positionX="-63" positionY="-18" width="128" height="179"/>
+        <element name="ImageSave" positionX="-63" positionY="54" width="128" height="44"/>
+    </elements>
+</model>
