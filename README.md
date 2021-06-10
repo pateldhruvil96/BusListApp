@@ -28,6 +28,7 @@ Things to know:
    6. Used xib's for custom layouts, implemented AutoLayouts, used StackView for properly displaying the data
    7. Added  alert for : no networkConnectivity, failed API, empty data
    8. Design Pattern: MVC(Model View Controller)
+   9. No third-party framework is integrated.
 
 
 
