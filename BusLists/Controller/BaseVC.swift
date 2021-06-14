@@ -170,7 +170,6 @@ class ImageView: UIImageView {
     override var image: UIImage? {
         didSet {
             super.image = image
-            //            self.deleteAllRecords(entityName: "ImageSave")
             if let setImage = image,Reachability.isConnectedToNetwork(){
                 print("Image Set")
                 let busList  = ImageSave(context: self.context)

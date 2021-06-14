@@ -67,34 +67,9 @@ class BusListTableViewCell: UITableViewCell {
                 // Ignore calls when reloading
                 let urlString = baseLogoStringURL + details.busLogoURL
                 task = travelsLogoImageView.downloadImage(from: urlString, saveAsCache: true)
-                    //Saving in DB
-//                    self.deleteAllRecords(entityName: "ImageSave")
-//                    let busList  = ImageSave(context: self.context)
-//                    busList.image = outputImage.pngData()!
-//                    do{
-//                        try self.context.save()
-//                    }catch{
-//                        print(error)
-//                    }
                    
             }
             
-        }
-    }
-    func deleteAllRecords(entityName:String) {
-        DispatchQueue.main.async {
-        let delegate = UIApplication.shared.delegate as! AppDelegate
-        let context = delegate.persistentContainer.viewContext
-
-        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
-        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
-
-        do {
-            try context.execute(deleteRequest)
-            try context.save()
-        } catch {
-            print ("There was an error")
-        }
         }
     }
 }

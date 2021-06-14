@@ -23,7 +23,6 @@ class FilterVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-      // alreadyFilteredCheck()
     }
     func setup(){
         let nibCustomTableViewCell = UINib(nibName: "FilterTableViewCell", bundle: nil)
@@ -34,12 +33,6 @@ class FilterVC: BaseVC {
         
         topView.addShadow(cornerRadius: 0, shadowRadius: 5, shadowColor: .black, shadowOpacity: 0.2, shadowOffsetHeight: 10)
     }
-//    func alreadyFilteredCheck(){
-//        selectedSortByTitle = UserDefaults.standard.object(forKey: "sortByTitle") as! String
-//        selectedBusTypeSet = UserDefaults.standard.object(forKey: "busTypeSet") as! Set<String>
-//    }
-    
-    
     @IBAction func backButtonAction(_ sender: UIButton) {
         dismiss(animated: true)
     }
